@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+      <h5 class="my-0 mr-md-auto font-weight-normal">Rejaf новости</h5>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="/">Главная страница</a>
+        <a class="p-2 text-dark" href="/about">Про нас</a>
+        <a class="p-2 text-dark" href="/posts">Новости</a>
+      </nav>
+      <a class="bth bth-warning" href="/create-article">Создать новость</a>
+    </div>
+{% block body %}{% endblock %}
+
+<footer class="container pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+        <small class="d-block mb-3 text-muted">© 2022</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Последние новости</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted"  href="/posts/1">Рандомная новость</a></li>
+          <li><a class="text-muted" href="/posts/2">Новость дня</a></li>
+          <li><a class="text-muted" href="/posts/3">Вы не поверите в это...</a></li>
+          <li><a class="text-muted" href="/posts/4">Сенсация !!!</a></li>
+          <li><a class="text-muted" href="/posts/5">Новость в которую не поверила даже Бузова</a></li>
+          <li><a class="text-muted" href="/posts/6">О таком лучше стоит промолчать...</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Соц.сети</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="https://vk.com/xotsooc">Вк</a></li>
+          <li><a class="text-muted" href="https://www.instagram.com/macsemowon">Инстаграм</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

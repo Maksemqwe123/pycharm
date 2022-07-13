@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">Добро Пожаловать на Новости Rejaf</h1>
+  <p class="lead">На этом сайте вы можете просматривать самые необычные новости и создавать свои) </p>
+    <div class="card-deck mb-3 text-center">
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Бесплатно</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$0</h1>
+        <h2 class="card-title pricing-card-title">Преимущество или почему стоит почитать новости</h2>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Абсолютно бесплатное чтение новостей</li>
+          <li>Не нужно регистрироваться</li>
+          <li>Доза радости и смеха</li>
+          <li>Также можно написать свою новость)</li>
+        </ul>
+        <a class="btn btn-lg btn-block btn-outline-primary" href="/posts">Перейти к чтению новостей</a>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Бесплатно</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$0</small></h1>
+        <h2 class="card-title pricing-card-title">Преимущество или почему стоит написать новость</small></h2>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li></li>
+          <li>Абсолютно бесплатно написание новости</li>
+          <li>Не нужно регестрироваться</li>
+          <li>Ваша новость обрадует и подарит позитив пользователям</li>
+        </ul>
+        <a class="btn btn-lg btn-block btn-primary" href="/create-article">Написать новость</a>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Права Админа</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$10</small></h1>
+        <h2 class="card-title pricing-card-title">Почему стоит купить права Админа</small></h2>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Полный доступ к сайту</li>
+          <li>Безгроничные возможности</li>
+          <li>Порадуете дежкой разраба)</li>
+        </ul>
+        <a class="btn btn-lg btn-block btn-primary" href="https://vk.com/xotsooc">Написать главному админу для покупки прав</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}

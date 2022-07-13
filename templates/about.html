@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Страница про нас
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">Страница про нас!</h1>
+      <p>Новости Rejaf это самые горячие и интересные новости,
+        в которых расскрывается тайны звёзд, вемирные заговоры, многолетняя ложь и много чего д.р.
+        Будьте с нами и вы много чего изнаете, также вы можете свою новость рассказать)</p>
+      <p><a class="btn btn-primary btn-lg" href="/posts" role="button">Читать новости »</a></p>
+    </div>
+  </div>
+    <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">То что вас заинтересует</strong>
+          <h5 class="mb-0">Новость о которой вы даже не подозревали.</h5>
+          <div class="mb-1 text-muted">Сегодня</div>
+          <p class="card-text mb-auto">Не давно наш репортёр был на месте событии и он нам рассказал,
+            то во что трудно поверить до сих пор...</p>
+          <a href="/posts/1" class="stretched-link">Читать подробнее</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img style="position: relative;width: 200px;height: 250px;left: 10%" src="https://www.meme-arsenal.com/memes/1d367a7343f8769e563f40a38046609f.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">то во что до сих еще некоторые не верят.</strong>
+          <h5 class="mb-0">Шокирующая новость!!!</h5>
+          <div class="mb-1 text-muted">Недавно</div>
+          <p class="mb-auto">Никто не верил в это, но всё же этот день настал...</p>
+          <a href="/posts/2" class="stretched-link">Читать подробнее</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+           <img style="position: relative;width: 200px;height: 250px;left: 10%" src="https://p7.hiclipart.com/preview/933/595/606/pepe-the-frog-clip-art-glowing-halo-thumbnail.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
